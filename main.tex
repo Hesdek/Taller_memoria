@@ -13,15 +13,15 @@
         \vspace*{1cm}
             
         \Huge
-        \textbf{Título del trabajo}
+        \textbf{Taller de memoria}
             
         \vspace{0.5cm}
         \LARGE
-        Subtítulo
+        Informática II
             
         \vspace{1.5cm}
             
-        \textbf{Nombres y Apellidos del autor}
+        \textbf{Daniel Pérez Gallego}
             
         \vfill
             
@@ -38,52 +38,66 @@
 
 \tableofcontents
 
-\section{Sección introductoria}
-Esta es la primera sección, podemos agregar algunos elementos adicionales y todo será escrito correctamente. Más aún, si una palabra es demasiado larga y tiene que ser truncada, babel tratará de truncarla correctamente dependiendo del idioma.
+\section{Introducción}
+La siguiente es un informe sobre el funcionamiento, utilización,y tipos de memoria  en la computación.
+\vspace{12 cm}
+\section{Memoria (Computación)} \label{contenido}
 
-\section{Sección de contenido} \label{contenido}
+\subsection{Qué es la memoria de un computador}
+Puede ser definido como la capacidad que tiene un dispositivo para poder ejecutar procesos,  ingresar y extraer datos y hasta para que el mismo dispositivo pueda encenderse.
+Algunos para realizar modificaciones y procesos temporalmente de manera segura y más eficiente sin la necesidad de modificar directamente el archivo o documento.
+\vspace{0,5 cm}
 
-Esta sección es para ver qué pasa con los comandos 
-que definen texto
+Al igual como es explicado en la analogía del documento dado el escritorio tiene una capacidad limitada, se ingresa y se extrae constantemente datos por un tiempo, hasta que se apague el dispositivo.\cite{agusto}
 
-El paquete también agrega un comportamiento especial 
-a <<estas marcas para hacer citas textuales>> tal como 
-lo indican las reglas de la RAE. \cite{dirac}
+\subsection{Tipos de memoria}
 
-\begin{lstlisting}
-#include <stdio.h>
-#define N 10
-/* Block
- * comment */
+\subsubsection{RAM}
+La mayor parte de la información llega a esta, debido a que es la memoria utilizada cuando se ejecutan instrucciones como modificar un archivo, hasta poder ejecutar programas en el dispostivo y mantenerlos abiertos. Esta que a pesar de ser menos veloz que la cache, la compensa con su capacidad y el constante uso de esta.\cite{guille}
 
-int main()
-{
-    int i;
+\subsubsection{ROM}
+Por su nombre en ingles, se refiere a una memoria de solo lectura y nada de modificación, con la capacidad de guardar estos datos de forma permanente y contiene datos predeterminados para el funcionamiento básico del dispositivo.
 
-    // Line comment.
-    puts("Hello world!");
-    
-    for (i = 0; i < N; i++)
-    {
-        puts("LaTeX is also great for programmers!");
-    }
+\subsubsection{Cache}
+Surge cuando las memorias ya no eran capaces de acompañar a la velocidad del procesador, haciendo que muchas veces este se quedara esperando, es una memoria más rápida que la RAM, usada para almacenar datos que son usados con mucha frecuencia.
 
-    return 0;
-}
-\end{lstlisting}
+\subsubsection{Disco duro}
+Usado para guardar información que frecuentemente será permanente, con permanente me refiero a que por lo contrario de la RAM  y la caché, los datos guardados en el disco duro no se borarán cuando se apague el dispositivo.
+\vspace{5 cm}
+\subsection{Cómo se gestiona la memoria}
+Primero, si estamos usando un dispositivo tenemos que encenderlo, para esto se usará las instruciones archivadas en la ROM para dar inicio a la BIOS, además se estará usando la RAM para que el constante sistema operativo esté funcionando, toda esta gestión se hace por medio del MCH en el microprocesador y el controlador de memoria (IMC) gestionando la entrada y salida de la memoria, para que las latencias de acceso a la memoria RAM se reducen
 
-A continuación se presenta el logo de C++ Figura (\ref{fig:cpplogo})
+\subsection{Qué hace que una memoria sea más rápida que otra}
+Cuando hablamos sobre el rendimiento de la memoria RAM, tenemos que hablar sobre la frecuencia, latencia y voltaje presente en esta, debido a que son los parámetros que son aún más importantes sobres
+ la velocidad y rendimiento de la memoria.
+ 
+\vspace{0,5 cm}
 
-\begin{figure}[h]
-\includegraphics[width=4cm]{cpplogo.png}
-\centering
-\caption{Logo de C++}
-\label{fig:cpplogo}
-\end{figure}
+Lo que nos hace pensar sobre la frecuencia es la cantidad
+de veces por segundo (Calculado en MHz o GHz) que se tarda en hacer una operacion y la latencia es el
+tiempo que se tarda en recibir un comando y el voltaje que recibe afecta directamente a la vida útil de la memoria y por lo tanto, del dispositivo.
+
+\vspace{0,5 cm}
+
+Una de las características que tienen los dispositivos con alto rendimiento es la existencia de la caché L3. la cual solo viene incorporada a los microprocesadores más óptimos, aunque es cierto que la caché L3 es menos veloz que la L1, compensa con mayor capcidad y sigue siendo considerablemente más rápida que la RAM.
+
+\vspace{0,5 cm}
+La proximidad a la motherboard es un factor muy importante y tambien lo es la manera  que está buscando los datos, por ejemplo la RAM trabaja de manera aleatoria, pero la ROM tiene que encontrar la información específica que busca recorriendo todos los datos.
+
+\vspace{0,5 cm}
+
+El punto principal del uso de distintos tipos memorias es la velocidad de estas, debido a que  se busca compensar la carencia de velocidad comparado con los otros componentes como  el microprocesador.
+
+
+
+\vspace{2,0 cm}
+
+
 
 En la sección de teoremas (\ref{contenido})
 
 \section{Conclusión} \label{conclulsion}
+Se puede evidenciar, que los dispositivos electrónicos son máquinas encaminadas a la optimización absoluta, cada vez con más componentes con una función específica para evitar derroches de memoria o tiempo; cada vez los dispositivos contienen mejores componentes para que este pueda trabajar de forma más eficiente y tratamos de solucionar los problemas que puedan generar la implementación o el uso de otros dispositivos que puedan disminuir el rendimiento, verdaderamente, cada vez es un reto mayor (Pero no imposible) el mejorar estas características sin la necesidad de que tengan un alto costo.
 
 \bibliographystyle{IEEEtran}
 \bibliography{references}
